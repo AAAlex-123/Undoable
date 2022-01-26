@@ -26,7 +26,9 @@ public class UndoableHistory<T extends Undoable> {
 	}
 
 	/**
-	 * Adds an {@code Undoable} to the history without executing it.
+	 * Adds an {@code Undoable} to the history without executing it. The
+	 * {@code Undoable} should be executed before being added to the History in
+	 * order to catch any errors.
 	 *
 	 * @param undoable the Undoable
 	 */
